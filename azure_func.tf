@@ -18,7 +18,7 @@ resource "random_id" "server" {
 }
 
 resource "azurerm_storage_account" "au-get-session" {
-  name                     = "randomidserverhex"
+  name                     = "augetsessionstorage"
   resource_group_name      = azurerm_resource_group.au-get-session.name
   location                 = azurerm_resource_group.au-get-session.location
   account_tier             = "Standard"
@@ -26,7 +26,7 @@ resource "azurerm_storage_account" "au-get-session" {
 }
 
 resource "azurerm_app_service_plan" "au-get-session" {
-  name                = "azure-functions-au-service-plan"
+  name                = "au-get-asp"
   location            = azurerm_resource_group.au-get-session.location
   resource_group_name = azurerm_resource_group.au-get-session.name
   kind                = "FunctionApp"
