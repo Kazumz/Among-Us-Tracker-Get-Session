@@ -1,5 +1,5 @@
 # Among-Us-Tracker-Get-Session Function
-An Azure serverless function that contains "business" logic for 'Creating a session'.
+An Azure serverless function that contains "business" logic for 'Getting a session'.
 
 - APIM URL: https://kp-global-apim.azure-api.net/au-Get-session
 - Get Session URL: https://kp-global-apim.azure-api.net/au-Get-session/GetSession
