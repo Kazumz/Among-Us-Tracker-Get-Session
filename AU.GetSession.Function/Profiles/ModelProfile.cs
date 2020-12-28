@@ -8,7 +8,7 @@ namespace AU.GetSession.Function.Profiles
         public ModelProfile()
         {
             CreateMap<Services.Repositories.Player.DataModel.Player, Player>()
-                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.RowKey));
+                .ForMember(dest => dest.Colour, opt => opt.MapFrom(src => src.RowKey));
         }
     }
 }

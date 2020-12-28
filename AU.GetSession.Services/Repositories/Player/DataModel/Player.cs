@@ -9,14 +9,14 @@ namespace AU.GetSession.Services.Repositories.Player.DataModel
         {
         }
 
-        public Player(Guid guid, string name)
+        public Player(Guid guid, int colour)
         {
             PartitionKey = guid.ToString();
-            RowKey = name;
+            RowKey = colour.ToString();
         }
 
         public int Position { get; set; }
 
-        public int Colour { get; set; }
+        public string Name { get; set; }
     }
 }
