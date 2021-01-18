@@ -25,7 +25,7 @@ In a one-to-one relationship, you could opt to capture the CosmosDB connection s
 However as I've got a many-to-one scenario here, lots of functions and one database, it's better it comes from keyvault and the CosmosDB becomes it's own independent deployment.
 
 ## Terraform & CI/CD
-I used Terraform to Get my infrastructure in Azure. As I do not have a CI/CD setup for this repository, I've opted to run this locally and link the Getd Function App in Azure to this GitHub repository using the 'Deployment Center' manually. Here Azure will automatically monitor my GitHub repository 'main' branch for changes and copy them to the Function App for me. When I make infrastructure changes, I'll have to manually run Terraform to get these to apply.
+I used Terraform to get my infrastructure in Azure. As I do not have a CI/CD setup for this repository, I've opted to run this locally and link the get Function App in Azure to this GitHub repository using the 'Deployment Center' manually. Here Azure will automatically monitor my GitHub repository 'main' branch for changes and copy them to the Function App for me. When I make infrastructure changes, I'll have to manually run Terraform to get these to apply.
 
 In an ideal world I'd setup a GitHub Workflow and:
 - Get that to build my code;
